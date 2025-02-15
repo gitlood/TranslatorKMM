@@ -2,8 +2,20 @@
 agp = "8.7.2"
 kotlin = "2.0.0"
 compose = "1.5.4"
+composeNavigation = "2.5.3"
+coilCompose = "2.1.0"
 compose-material3 = "1.1.2"
 androidx-activityCompose = "1.8.0"
+dateTimeVersion = "0.4.0"
+hiltVersion = "2.42"
+hiltComplierVersion = "1.0.0"
+ktorVersion = "2.1.3"
+sqlDelightGradleVersion = "2.0.1"
+sqlDelightVersion = "1.5.4"
+assertKVersion = "0.25"
+turbineVersion = "0.7.0"
+jUnitVersion = "4.13.2"
+testRunnerVersion = "1.5.1"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -13,6 +25,35 @@ compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = 
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
 compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
+compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
+composeIconsExtended = { module = "androidx.compose.material:material-icons-extended", version.ref = "compose" }
+composeNavigation = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation" }
+coilCompose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+kotlinDateTime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "dateTimeVersion" }
+composeTesting = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose" }
+composeTestManifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose" }
+
+hiltAndroid = { module = "com.google.dagger:hilt-android", version.ref = "hiltVersion" }
+hiltAndroidCompiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltVersion" }
+hiltCompiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltComplierVersion" }
+hiltNavigationCompose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltComplierVersion" }
+hiltTesting = { module = "com.google.dagger:hilt-android-testing", version.ref = "hiltVersion" }
+
+ktorCore = { module = "io.ktor:ktor-client-core", version.ref = "ktorVersion" }
+ktorSerialization = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorVersion" }
+ktorSerializationJson = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorVersion" }
+ktorAndroid = { module = "io.ktor:ktor-client-android", version.ref = "ktorVersion" }
+ktorIOS = { module = "io.ktor:ktor-client-ios", version.ref = "ktorVersion" }
+
+sqlDelightRuntime = { module = "com.squareup.sqldelight:runtime", version.ref = "sqlDelightVersion" }
+sqlDelightAndroidDriver = { module = "com.squareup.sqldelight:android-driver", version.ref = "sqlDelightVersion" }
+sqlDelightNativeDriver = { module = "com.squareup.sqldelight:native-driver", version.ref = "sqlDelightVersion" }
+sqlDelightCoroutinesExtensions = { module = "com.squareup.sqldelight:coroutines-extensions", version.ref = "sqlDelightVersion" }
+
+assertK = { module = "com.willowtreeapps.assertk:assertk", version.ref = "assertKVersion" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbineVersion" }
+jUnit = { module = "junit:junit", version.ref = "jUnitVersion" }
+testRunner = { module = "androidx.test:runner", version.ref = "testRunnerVersion" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -21,3 +62,8 @@ kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinGradlePlugin = { id = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+hiltGradlePlugin = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
+androidBuildTools = { id = "com.android.tools.build:gradle", version.ref = "agp" }
+sqlDelightGradlePlugin = { id = "app.cash.sqldelight", version.ref = "sqlDelightGradleVersion" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
